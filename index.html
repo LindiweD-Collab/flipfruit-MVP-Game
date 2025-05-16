@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game MVP</title>
+    <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+    <h1>🍓FlipFruit!🍓</h1>
+    <p id="intro-paragraph" style="text-align: center; font-size: 1.3rem; max-width: 700px; margin: 0 auto 20px auto; color: #236d60; font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive; text-shadow: 1px 1px 1px #ffd1dc;">
+        Welcome to <strong style="color: #3f3d3e;">FlipFruit! – The Ultimate Memory Game</strong> 🍓<br>
+        Test your memory and have fun with this vibrant fruit-matching challenge!  Flip the cards, find the pairs, 
+        and try to match all the delicious fruits as quickly as you can. 
+        It’s fun, casual, and a perfect way to sharpen your brain while enjoying juicy icons. <br>
+        Ready to play? 😄 <br> <br>
+        <strong style="color: #3f3d3e;">Let’s go! 🚀</strong>
+    
+    <div id="game-board" class="game-board"></div>
+    
+    <div id="congrats-message" style="display: none; text-align: center; font-size: 2rem; margin-top: 20px; color: green;">
+        🎉 Congratulations! You won! 🎉
+    </div>
+    
+    <button id="play-again-btn" style="display: none;" aria-label="Play Again">🔁 Play Again</button>
+
+
+    <script src="src/game.js"></script>
+    <script src="src/main.js"></script>
+    <script>
+    
+        document.getElementById('play-again-btn').addEventListener('click', function () {
+            location.reload();
+        });
+
+    </script>
+</body>
+</html>

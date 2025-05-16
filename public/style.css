@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+.congrats-message {
+display: none;
+text-align: center;
+font-size: 1rem;
+margin-top: 10px;
+color: green;
+}
+
+.card.flipped {
+  background-color: #fff;
+}
+#play-again-btn {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 8px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#play-again-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f0f8ff;
+  padding: 10px;
+
+}
+.game-description {
+text-align: center;
+font-size: 0.9rem;
+max-width: 700px;
+margin: 0 auto 20px auto;
+color: #236d60;
+font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
+text-shadow: 1px 1px 1px #ffd1dc;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #3ebd97;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  gap: 15px; 
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  background-color: #e7c4c4;
+  border: 2px solid #473e3e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+  .card.flipped {
+      background-color: #4CAF50;
+      color: rgb(245, 138, 138);
+  }  
+
+#congrats-message {
+  display: none;
+  font-size: 2rem;
+  color: linear-gradient(to right, #ff7e5f, #92ec97);
+  background: -webkit-linear-gradient(#ff7e5f, #96c787);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 20px;
+  text-align: center;
+  grid-column: span 4; 
+}
+.highlight-text {
+color: #3f3d3e;
+  }
+  
+#play-again-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #c47fb2;
+  color: white;
+  border: none;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.hidden {
+display: none;
+}
+
+.play-again-btn {
+padding: 6px 12px;
+background-color: #007bff; 
+color: #fff;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.play-again-btn:hover {
+background-color: #0056b3;
+}
